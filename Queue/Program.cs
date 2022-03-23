@@ -55,4 +55,9 @@ Represents a first-in, first-out collection of objects.
 *First in and first out that's a queue
 
 
+
+What is Peek Method?
+
+Returns the next available character but does not consume it.
+
  */
