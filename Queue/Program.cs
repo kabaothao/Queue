@@ -13,12 +13,27 @@ namespace MyApp // Note: actual namespace depends on the project name.
             queue.Enqueue(2);
             queue.Enqueue(3);
 
-            foreach(object o in queue)
+            Console.WriteLine("1 in Queue : {0}", queue.Contains(1));
+
+            //Remove first item
+            //Console.WriteLine("Remove 1 : {0}", queue.Dequeue());
+
+            //Peek first item
+            Console.WriteLine("Peek 1 : {0}", queue.Peek());
+
+            object[] numArray = queue.ToArray();
+            Console.WriteLine(String.Join( ",", numArray));
+
+            //queue.Clear();
+
+
+            foreach (object o in queue)
             {
                 Console.WriteLine($"Queue :{o}");
             }
 
 
+            Console.ReadLine();
 
         }
     }
@@ -37,7 +52,7 @@ System.Collections.dll
 
 Represents a first-in, first-out collection of objects.
 
-
+*First in and first out that's a queue
 
 
  */
