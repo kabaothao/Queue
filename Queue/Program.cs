@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
@@ -6,7 +8,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            System.Collections.Queue queue = new System.Collections.Queue();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+
+            foreach(object o in queue)
+            {
+                Console.WriteLine($"Queue :{o}");
+            }
+
+
+
         }
     }
 }
